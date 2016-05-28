@@ -133,10 +133,7 @@
 
 <div class="starter-template">
 
-<div class="col-md-10">
-
+<div>
 	<h1><?=(isset($titulo))?$titulo:'';?></h1>
-
 </div>
-
 

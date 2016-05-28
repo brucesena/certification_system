@@ -32,36 +32,44 @@ class Modelo extends CI_Controller {
 	{
 		$this->saida['dados']  = $this->modelo_model->listar();
 		$this->saida['active'] = 'modelos';
-		$this->show('Modelos');
+		$this->show('Modelos', 'list');
 	}
+
+	public function save()
+	{
+		if ($this->input->post('button') == 'ok'){
+			$data = array();
+			$id = $this->input->post('_id');
+			$data['nome'] = $this->input->post('nome');
+			$data['versao'] = $this->input->post('versao');
+			$data['site'] = $this->input->post('site');
+			$data['descricao'] = $this->input->post('descricao');
+			$this->modelo_model->save($data, $id);	
+		}
+		redirect('modelo/', 'refresh');
+	}
+
 
 	public function edit($id)
 	{
-
-
+		$this->saida['dados'] = $this->modelo_model->listar($id)[0];
+		$this->show('Modelos - Editar', 'edit');
 	}
-	public function deletar($id)
+	public function delete($id)
 	{
-
-
-	}
-
-	public function add($id)
-	{
-
-
+		$this->modelo_model->remover($id);
+		redirect('modelo/', 'refresh');
 	}
 
-	public function save($id)
+	public function add()
 	{
-
-
+		$this->show('Modelos - Adicionar', 'add');
 	}
 
-	private function show($titulo)
+	private function show($titulo, $view)
 	{
-		$this->load->view('header', array('titulo' => 'Modelos'));
-		$this->load->view('modelos/listar', $this->saida);
+		$this->load->view('header', array('titulo' => $titulo));
+		$this->load->view("modelos/$view", $this->saida);
 		$this->load->view('footer');
 	}
 

@@ -4,7 +4,7 @@
 
         <div class="btn-group">
 
-	        <a href="<?=base_url('modelos/add')?>" class="btn btn-primary ">Adicionar</a>
+	        <a href="<?=base_url('index.php/modelo/add')?>" class="btn btn-primary ">Adicionar</a>
 
         </div>
 
@@ -27,10 +27,10 @@
 				<td><?=$row['versao'];?></td>
 				<td><?=$row['site'];?></td>
 				<td>
-					<a href="<?=base_url('modelos/edit/'.$row['_id']);?>" class="btn btn-success">
+					<a href="<?=base_url('index.php/modelo/edit/'.$row['_id']);?>" class="btn btn-success">
 					<span class="glyphicon glyphicon-edit">
 					</a>
-					<a href="<?=base_url('modelos/delete/'.$row['_id']);?>" class="btn btn-danger">
+					<a href="<?=base_url('index.php/modelo/delete/'.$row['_id']);?>" class="btn btn-danger">
 					<span class="glyphicon glyphicon-remove">
 					</a>
 
