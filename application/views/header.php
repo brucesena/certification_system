@@ -18,8 +18,6 @@
 
         <script src="<?=base_url('includes/jquery-latest.min.js');?>"></script>
 
-
-
         <!-- Latest compiled and minified CSS -->
 
         <link rel="stylesheet" href="<? echo base_url('includes/bootstrap/css/bootstrap.min.css') ?>">
@@ -93,6 +91,12 @@
                 <ul class="dropdown-menu">
 
              	   <li <?=$active=='modelos'?'class="active"':'';?> ><a href="<?php echo site_url('modelo')?>">Modelos</a></li>
+             	   <li <?=$active=='metas_genericas'?'class="active"':'';?> >
+			<a href="<?php echo site_url('metas_genericas')?>">Metas genéricas</a></li>
+             	   <li <?=$active=='niveis_capacidade'?'class="active"':'';?> >
+			<a href="<?php echo site_url('niveis_capacidade')?>">Níveis de capacidade</a></li>
+             	   <li <?=$active=='metas_matuidade'?'class="active"':'';?> >
+			<a href="<?php echo site_url('niveis_maturidade')?>">Níveis de maturidade</a></li>
 
 		</ul>
 
