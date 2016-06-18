@@ -94,9 +94,11 @@
              	   <li <?=$active=='metas_genericas'?'class="active"':'';?> >
 			<a href="<?php echo site_url('metas_genericas')?>">Metas genéricas</a></li>
              	   <li <?=$active=='niveis_capacidade'?'class="active"':'';?> >
-			<a href="<?php echo site_url('niveis_capacidade')?>">Níveis de capacidade</a></li>
+			<a href="<?php echo site_url('nivel_capacidade')?>">Níveis de capacidade</a></li>
              	   <li <?=$active=='metas_matuidade'?'class="active"':'';?> >
-			<a href="<?php echo site_url('niveis_maturidade')?>">Níveis de maturidade</a></li>
+			<a href="<?php echo site_url('nivel_maturidade')?>">Níveis de maturidade</a></li>
+             	   <li <?=$active=='pratica_especifica'?'class="active"':'';?> >
+			<a href="<?php echo site_url('pratica_especifica')?>">Práticas especificas</a></li>
 
 		</ul>
 
