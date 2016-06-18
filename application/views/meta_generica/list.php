@@ -4,7 +4,7 @@
 
         <div class="btn-group">
 
-	        <a href="<?=base_url('index.php/meta_generica/add')?>" class="btn btn-primary ">Adicionar</a>
+	        <a href="<?=base_url('index.php/metas_genericas/add')?>" class="btn btn-primary ">Adicionar</a>
 
         </div>
 
