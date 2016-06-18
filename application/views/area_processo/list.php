@@ -4,7 +4,7 @@
 
         <div class="btn-group">
 
-	        <a href="<?=base_url('index.php/metas_genericas/add')?>" class="btn btn-primary ">Adicionar</a>
+	        <a href="<?=base_url('index.php/area_processo/add')?>" class="btn btn-primary ">Adicionar</a>
 
         </div>
 
@@ -12,12 +12,12 @@
 <table id="listagem" class="table table-bordered">
 
 	<thead>
-        <tr>
-			<th width="25%">Nome</th>
-			<th width="25%">Sigla</th>
-			<th width="40%">Descrição</th>
-			<th width="10%">Ações</th>
-	    </tr>
+              <tr>
+		<th width="40%">Nome</th>
+		<th width="15%">Sigla</th>
+		<th width="30%">Descrição</th>
+		<th width="15%">Ações</th>
+	      </tr>
 	</thead>
 
 	<tbody>
@@ -27,10 +27,10 @@
 				<td><?=$row['sigla'];?></td>
 				<td><?=$row['descricao'];?></td>
 				<td>
-					<a href="<?=base_url('index.php/metas_genericas/edit/'.$row['_id']);?>" class="btn btn-success">
+					<a href="<?=base_url('index.php/area_processo/edit/'.$row['_id']);?>" class="btn btn-success">
 					<span class="glyphicon glyphicon-edit">
 					</a>
-					<a href="<?=base_url('index.php/metas_genericas/delete/'.$row['_id']);?>" class="btn btn-danger">
+					<a href="<?=base_url('index.php/area_processo/delete/'.$row['_id']);?>" class="btn btn-danger">
 					<span class="glyphicon glyphicon-remove">
 					</a>
 

@@ -1,4 +1,4 @@
-<form class="form-horizontal" method="post" action="<?=base_url('index.php/metas_genericas/save');?>" >
+<form class="form-horizontal" method="post" action="<?=base_url('index.php/Area_processo/save');?>" >
 <fieldset>
 <!-- Form Name -->
 
@@ -6,7 +6,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="nome">Nome</label>  
   <div class="col-md-6">
-  <input id="nome" name="nome" type="text" placeholder="Nome da meta genérica" class="form-control input-md" required="" 
+  <input id="nome" name="nome" type="text" placeholder="Area de Processo" class="form-control input-md" required="" 
     value="">
     
   </div>
@@ -16,11 +16,11 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="sigla">Sigla</label>  
   <div class="col-md-4">
-  <input id="sigla" name="sigla" type="text" placeholder="Digite a sigla da Meta genérica" class="form-control input-md" value="">
+  <input id="sigla" name="sigla" type="text" placeholder="Digite a sigla da area de processo" class="form-control input-md"
+   value="">
+    
   </div>
 </div>
-
-
 
 <!-- Textarea -->
 <div class="form-group">
@@ -41,3 +41,4 @@
 
 </fieldset>
 </form>
+

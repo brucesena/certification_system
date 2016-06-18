@@ -1,4 +1,4 @@
-<form class="form-horizontal" method="post" action="<?=base_url('index.php/meta_generica/save');?>" >
+<form class="form-horizontal" method="post" action="<?=base_url('index.php/metas_genericas/save');?>" >
 <fieldset>
 
 <input type="hidden" id="_id" name="_id" value="<?=$dados['_id'];?>">
@@ -10,7 +10,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="nome">Nome</label>  
   <div class="col-md-6">
-  <input id="nome" name="nome" type="text" placeholder="Nome da Meta" class="form-control input-md" required="" 
+  <input id="nome" name="nome" type="text" placeholder="Nome da meta genérica" class="form-control input-md" required="" 
     value="<?=$dados['nome'];?>">
     
   </div>
@@ -18,9 +18,9 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="sigla">Versão</label>  
+  <label class="col-md-4 control-label" for="sigla">Sigla</label>  
   <div class="col-md-4">
-  <input id="sigla" name="sigla" type="text" placeholder="Digite a sigla" class="form-control input-md"
+  <input id="sigla" name="sigla" type="text" placeholder="Digite a sigla da Meta genérica" class="form-control input-md"
    value="<?=$dados['sigla'];?>">
     
   </div>

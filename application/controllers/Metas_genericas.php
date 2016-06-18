@@ -52,12 +52,12 @@ class Metas_genericas extends CI_Controller {
 
 	public function edit($id)
 	{
-		$this->saida['dados'] = $this->meta_generica_model->listar($id)[0];
+		$this->saida['dados'] = $this->metas_genericas_model->listar($id)[0];
 		$this->show('Meta Genérica - Editar', 'edit');
 	}
 	public function delete($id)
 	{
-		$this-> meta_generica_model->remover($id);
+		$this-> metas_genericas_model->remover($id);
 		redirect('metas_genericas/', 'refresh');
 	}
 

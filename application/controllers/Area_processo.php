@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Area_Processo extends CI_Controller {
+class Area_processo extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,22 +18,21 @@ class Area_Processo extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	private $saida;
-
+		private $saida;
 
 	public function __construct()
         {
-		parent::__construct();
-		$this->load->model('area_processo_model');
-		$this->saida = array();
-	}
+			parent::__construct();
+			$this->load->model('area_processo_model');
+			$this->saida = array();
+		}
 
-	public function index()
-	{
-		$this->saida['dados']  = $this->modelo_model->listar();
-		$this->saida['active'] = 'modelos';
-		$this->show('area_processo', 'list');
-	}
+		public function index()
+		{
+			$this->saida['dados']  = $this->area_processo_model->listar();
+			$this->saida['active'] = 'area_processo';
+			$this->show('Áreas de Processo', 'list');
+		}
 
 	public function save()
 	{
@@ -41,11 +40,11 @@ class Area_Processo extends CI_Controller {
 			$data = array();
 			$id = $this->input->post('_id');
 			$data['nome'] = $this->input->post('nome');
-			$data['versao'] = $this->input->post('sigla');
+			$data['sigla'] = $this->input->post('sigla');
 			$data['descricao'] = $this->input->post('descricao');
 			$this->area_processo_model->save($data, $id);	
 		}
-		redirect('area_processo/', 'refresh');
+		redirect('Area_processo/', 'refresh');
 	}
 
 

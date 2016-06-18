@@ -1,4 +1,4 @@
-<form class="form-horizontal" method="post" action="<?=base_url('index.php/modelo/save');?>" >
+<form class="form-horizontal" method="post" action="<?=base_url('index.php/Area_processo/save');?>" >
 <fieldset>
 
 <input type="hidden" id="_id" name="_id" value="<?=$dados['_id'];?>">
@@ -10,7 +10,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="nome">Nome</label>  
   <div class="col-md-6">
-  <input id="nome" name="nome" type="text" placeholder="Nome da área de processo" class="form-control input-md" required="" 
+  <input id="nome" name="nome" type="text" placeholder="Nome da area de processo" class="form-control input-md" required="" 
     value="<?=$dados['nome'];?>">
     
   </div>
@@ -18,15 +18,14 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="versao">Versão</label>  
+  <label class="col-md-4 control-label" for="sigla">Sigla</label>  
   <div class="col-md-4">
-  <input id="sigla" name="sigla" type="text" placeholder="Digite a sigla da área de processo" class="form-control input-md"
+  <input id="sigla" name="sigla" type="text" placeholder="Digite a sigla da area de processo" class="form-control input-md"
    value="<?=$dados['sigla'];?>">
     
   </div>
 </div>
-  </div>
-</div>
+
 
 <!-- Textarea -->
 <div class="form-group">

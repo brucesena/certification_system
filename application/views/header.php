@@ -99,6 +99,10 @@
 			<a href="<?php echo site_url('nivel_maturidade')?>">Níveis de maturidade</a></li>
              	   <li <?=$active=='pratica_especifica'?'class="active"':'';?> >
 			<a href="<?php echo site_url('pratica_especifica')?>">Práticas especificas</a></li>
+             	   <li <?=$active=='area_processo'?'class="active"':'';?> >
+			<a href="<?php echo site_url('area_processo')?>">Áreas de processo</a></li>
+
+
 
 		</ul>
 
