@@ -101,6 +101,12 @@
 			<a href="<?php echo site_url('pratica_especifica')?>">Práticas especificas</a></li>
              	   <li <?=$active=='area_processo'?'class="active"':'';?> >
 			<a href="<?php echo site_url('area_processo')?>">Áreas de processo</a></li>
+             	   <li <?=$active=='produto_trabalho'?'class="active"':'';?> >
+			<a href="<?php echo site_url('Produto_trabalho')?>">Produto de trabalho</a></li>
+             	   <li <?=$active=='categoria'?'class="active"':'';?> >
+			<a href="<?php echo site_url('categoria')?>">Categorias</a></li>
+		   <li <?=$active=='meta_especifica'?'class="active"':'';?> >
+			<a href="<?php echo site_url('meta_especifica')?>">Metas específicas</a></li>
 
 
 
@@ -113,13 +119,13 @@
 
              <li class="dropdown">
 
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administração</span></a>
 
                 <ul class="dropdown-menu">
 
-                    <li><a href="<?php echo site_url('login/trocasenha')?>">Atualizar senha</a></li>
+                    <li><a href="<?php echo site_url('usuarios')?>">Usuários</a></li>
 
-                    <li><a href="<?php echo site_url('login/logout')?>"><span class="glyphicon glyphicon-off"> Sair</a></li>
+                    <li><a href="<?php echo site_url('ligacoes')?>">Ligações entre tabelas</a></li>
 
                 </ul>
 

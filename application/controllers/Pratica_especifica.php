@@ -43,20 +43,20 @@ class Pratica_especifica extends CI_Controller {
                         $data['nome'] = $this->input->post('nome');
                         $data['sigla'] = $this->input->post('sigla');
                         $data['descricao'] = $this->input->post('descricao');
-                        $this->Pratica_especifica->save($data, $id);
+                        $this->pratica_especifica_model->save($data, $id);
                 }
                 redirect('Pratica_especifica/', 'refresh');
         }
 
 	public function edit($id)
         {
-                $this->saida['dados'] = $this->Pratica_especifica_model->listar($id)[0];
+                $this->saida['dados'] = $this->pratica_especifica_model->listar($id)[0];
                 $this->show('Pratica_especifica - Editar', 'edit');
         }
 
 	public function delete($id)
         {
-                $this->Pratica_especifica->remover($id);
+                $this->pratica_especifica_model->remover($id);
                 redirect('Pratica_especifica/', 'refresh');
         }
 
