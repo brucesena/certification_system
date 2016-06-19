@@ -55,6 +55,21 @@ class Modelo extends CI_Controller {
 		$this->saida['dados'] = $this->modelo_model->listar($id)[0];
 		$this->show('Modelos - Editar', 'edit');
 	}
+
+	public function edit_capacidade($id)
+	{
+		$this->load->model('nivel_capacidade_model');
+		$this->saida['niveis']  = $this->nivel_capacidade_model->listar();
+		$this->saida['dados'] = $this->modelo_model->listar($id)[0];
+		$this->show('Modelos - Editar', 'edit_capacidade');
+	}
+
+	public function save_capacidade()
+	{
+
+		redirect('modelo/', 'refresh');
+	}
+
 	public function delete($id)
 	{
 		$this->modelo_model->remover($id);

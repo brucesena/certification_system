@@ -27,6 +27,12 @@
 				<td><?=$row['versao'];?></td>
 				<td><?=$row['site'];?></td>
 				<td>
+
+					<a href="<?=base_url('index.php/modelo/edit_capacidade/'.$row['_id']);?>" class="btn btn-success">
+					Níveis de capacidade
+					</a>
+			
+
 					<a href="<?=base_url('index.php/modelo/edit/'.$row['_id']);?>" class="btn btn-success">
 					<span class="glyphicon glyphicon-edit">
 					</a>
