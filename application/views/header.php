@@ -128,7 +128,7 @@
 
                 <ul class="dropdown-menu">
 
-                    <li><a href="<?php echo site_url('usuarios')?>">Usuários</a></li>
+                    <li><a href="<?php echo site_url('Cadastro_usuario')?>">Usuários</a></li>
 
                     <li><a href="<?php echo site_url('ligacoes')?>">Ligações entre tabelas</a></li>
 

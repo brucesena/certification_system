@@ -85,6 +85,8 @@
 
 </fieldset>
 <script type='text/javascript'>
+	
+
 
 	function addNivel(){
 
@@ -96,10 +98,8 @@
 		var e = document.getElementById('nivel');
 
 		cell1.innerHTML = e.options[e.selectedIndex].text ; 
-		cell.innerHTML ='<a class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-remove"></span> </a>' ; 
+		cell2.innerHTML ='<a class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-remove"></span> </a>' ; 
 
 	}
-
-
 </script>
 </form>
