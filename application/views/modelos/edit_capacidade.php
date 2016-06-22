@@ -85,8 +85,10 @@
 
 </fieldset>
 <script type='text/javascript'>
-	
 
+	function remover(i){
+		document.getElementById("listNiveis").deleteRow(i);
+	}
 
 	function addNivel(){
 
@@ -98,7 +100,8 @@
 		var e = document.getElementById('nivel');
 
 		cell1.innerHTML = e.options[e.selectedIndex].text ; 
-		cell2.innerHTML ='<a class="btn btn-primary btn-danger"><span class="glyphicon glyphicon-remove"></span> </a>' ; 
+		cell2.innerHTML ='<a class="btn btn-primary btn-danger"onclick="remover('+ row.rowIndex +');" >'+
+                                 '<span class="glyphicon glyphicon-remove"></span> </a>' ; 
 
 	}
 </script>
